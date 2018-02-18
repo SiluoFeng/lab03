@@ -1,6 +1,6 @@
 body
 {
-    background-color: red;
+    background-color: IndianRed;
     background-image: url(https://vignette.wikia.nocookie.net/fictionalcrossover/images/c/cd/MickeyMouse_logo.png/revision/latest?cb=20140227011218);
     background-size:10% 5%;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@ body
 
 p.pa
 {
-    background-color: red;
+    background-color: IndianRed;
     color: white;
     font-family: arial;
     font-size: 12pt;
@@ -19,23 +19,22 @@ p.pa
 }
 h1
 {
-  background-color: yellow 50%;
+  background-color: Gold;
   color:black;
   font-family: arial;
   font-size: 26pt;
-  background-color:rgba(255,255,0,1);
 }
 
 a
 {
-  background-color: red;
-  color: yellow;
+  background-color: IndianRed;
+  color: Gold;
   font-family: arial;
   font-size: 12pt;
 }
 a:hover
 {
-  background-color: red;
+  background-color: IndianRed;
   color:white;
   font-family: arial;
   font-size: 12pt;
@@ -49,6 +48,7 @@ img
 
 object
 {
-  width:70%;
-  height:50%;
+  width:500px;
+  height:200px;
+  align: center;
 }
