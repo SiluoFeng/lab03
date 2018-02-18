@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="picture/1.jpg" style="width:60% height:40% float:center">
+    <div class="text">1</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="picture/2.jpg" style="width:60% height:40 float:cente">
+    <div class="text">2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="picture/3.jpg" style="width:60% height:40 float:cente">
+    <div class="text">3</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="picture/4.jpg" style="width:60% height:40 float:cente">
+    <div class="text">4</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="picture/5.jpg" style="width:60% height:40 float:cente">
+    <div class="text">5</div>
+  </div>
+
+<button type="button" onclick="plusSlides(-1)">previous</button>
+<button type="button" onclick="plusSlides(1)">next</button>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+body
+{
+    background-color: red;
+    background-image: url(https://vignette.wikia.nocookie.net/fictionalcrossover/images/c/cd/MickeyMouse_logo.png/revision/latest?cb=20140227011218);
+    background-size:10% 5%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+
+p.pa
+{
+    background-color: red;
+    color: white;
+    font-family: arial;
+    font-size: 12pt;
+    width:70%;
+    float:left;
+}
+h1
+{
+  background-color: yellow 50%;
+  color:black;
+  font-family: arial;
+  font-size: 26pt;
+  background-color:rgba(255,255,0,1);
+}
+
+a
+{
+  background-color: red;
+  color: yellow;
+  font-family: arial;
+  font-size: 12pt;
+}
+a:hover
+{
+  background-color: red;
+  color:white;
+  font-family: arial;
+  font-size: 12pt;
+}
+img
+{
+  width:20%;
+  height:25%;
+  float:right center;
+}
+
+object
+{
+  width:70%;
+  height:50%;
+}

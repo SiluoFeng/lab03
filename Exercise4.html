@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 4</title>
+  <link href="Exercise4.css" rel="stylesheet" type="text/css">
+  </style>
+</head>
+
+<body>
+
+  <p id="p1" class="p1">Mickey Mouse is a funny animal cartoon character and the mascot of The Walt Disney Company.
+    He was created by Walt Disney and Ub Iwerks at the Walt Disney Studios in 1928.
+    An anthropomorphic mouse who typically wears red shorts, large yellow shoes, and white gloves,
+    Mickey is one of the world's most recognizable characters.</p>
+
+  <p>Border(0-255)</p>
+  <p>Red Value<input type="number" id="bdr" max="255" min="0">
+  Green Value<input type="number" id="bdg" max="255" min="0">
+  Blue Value<input type="number" id="bdb" max="255" min="0"></p>
+  <p>Width<input type="number" id="wid" min="0"></p>
+
+  <p>Background(0-255)</p>
+  <p>Red Value<input type="number" id="bgr" max="255" min="0">
+  Green Value<input type="number" id="bgg" max="255" min="0">
+  Blue Value<input type="number" id="bgb" max="255" min="0"></p>
+
+  <input type="submit" value="Submit" onclick="color()"/>
+
+  <script>
+    function color()
+    {
+      //bordercolor
+      var p2 = document.getElementById("p1");
+      var dr=document.getElementById("bdr").value;
+      var dg=document.getElementById("bdg").value;
+      var db=document.getElementById("bdb").value;
+      p2.style.borderColor ="rgb("+dr+","+dg+","+db+")";
+      //backgroundcolor
+      var gr=document.getElementById("bgr").value;
+      var gg=document.getElementById("bgg").value;
+      var gb=document.getElementById("bgb").value;
+      p2.style.backgroundColor ="rgb("+gr+","+gg+","+gb+")";
+      //width
+      var wid = document.getElementById("wid").value;
+      var newWid = wid +"px";
+      p2.style.borderWidth = newWid;
+    }
+  </script>
+
+</body>
+</html>
